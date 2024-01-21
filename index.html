@@ -43,7 +43,7 @@
                             <li class = "list-item"> Hourly Rate</li>
                         </ul>
                         <div class ="card-footer">
-                            <button class ="btn btn-primary" id="add-project"> Add Project</button>
+                        <button class ="btn btn-primary" data-bs-toggle="modal" data-bs-target="#inputModal" id="add-project"> Add Project</button>
                         </div>
                     </div>
                 </section>
@@ -69,8 +69,24 @@
                         </table>
                     </div>
                 </section>
-                
+            </div>
+        </div>          
     </main>
+
+    <!-- //Input Modal -->
+    <div class="modal fade" id="inputModal" tabindex="-1" aria-labelledby="inputModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="inputModalLabel">Project Details</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="projectName" class="form-label">Project Name</label>
+                            <input type="text" class="form-control" id="projectName" aria-describedby="projectName">
+
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./assets/js/script.js"></script>
